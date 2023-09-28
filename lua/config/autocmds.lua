@@ -24,6 +24,16 @@ vim.api.nvim_create_autocmd({ "BufWritePost" }, {
 vim.cmd([[
 augroup zsh
   au!
-  autocmd BufNewFile,BufRead *.zsh,.zshrc,.zshenv,.zprofile,.zsh_aliases,.zlogin,.zlogout,.zpreztorc,*/.zprezto/*/functions/* set filetype=zsh
+  autocmd BufNewFile,BufRead
+    \ *.zsh,
+    \~/.zshrc,
+    \~/.zshenv,
+    \~/.zprofile,
+    \~/.zaliases,
+    \~/.zlogin,
+    \~/.zlogout,
+    \~/.zpreztorc,
+    \~/.zprezto/runcoms/z*
+    \ set filetype=zsh
 augroup end
 ]])
