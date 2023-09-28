@@ -21,19 +21,24 @@ vim.api.nvim_create_autocmd({ "BufWritePost" }, {
   command = [[! chezmoi apply --source-path "%"]],
 })
 
-vim.cmd([[
-augroup zsh
-  au!
-  autocmd BufNewFile,BufRead
-    \ *.zsh,
-    \~/.zshrc,
-    \~/.zshenv,
-    \~/.zprofile,
-    \~/.zaliases,
-    \~/.zlogin,
-    \~/.zlogout,
-    \~/.zpreztorc,
-    \~/.zprezto/runcoms/z*
-    \ set filetype=zsh
-augroup end
-]])
+vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
+  pattern = {
+    "*.zsh",
+    vim.fn.expand("~") .. "/.z{log{in,out},zsh{rc,env},pr{ofile,eztorc},aliases}",
+    vim.fn.expand("~") .. "/.zprezto/runcoms/*",
+    vim.fn.expand("~") .. "/.zprezto/*/functions/*",
+  },
+  desc = "set filetype for zsh files",
+  group = vim.api.nvim_create_augroup("zshfiles", { clear = true }),
+  callback = function()
+    if vim.bo.filetype == "markdown" then
+      return
+    end
+
+    if vim.bo.filetype == "oil" then
+      return
+    end
+
+    vim.bo.filetype = "zsh"
+  end,
+})
