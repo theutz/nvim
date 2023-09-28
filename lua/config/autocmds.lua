@@ -15,6 +15,6 @@ augroup end
 
 augroup zsh
   au!
-  autocmd BufNewFile,BufRead *.zsh,.zshrc,.zshenv,.zprofile,.zsh_aliases,.zlogin,.zlogout,.zpreztorc set filetype=sh
+  autocmd BufNewFile,BufRead *.zsh,.zshrc,.zshenv,.zprofile,.zsh_aliases,.zlogin,.zlogout,.zpreztorc,*/.zprezto/*/functions/* set filetype=zsh
 augroup end
 ]])
