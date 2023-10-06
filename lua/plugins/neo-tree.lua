@@ -1,10 +1,10 @@
 return {
   {
     "nvim-neo-tree/neo-tree.nvim",
-    enabled = false,
+    enabled = true,
     opts = {
       filesystem = {
-        hijack_netrw_behavior = "disabled",
+        -- hijack_netrw_behavior = "disabled",
         filtered_items = {
           hide_dotfiles = false,
         },
