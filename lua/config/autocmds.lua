@@ -46,3 +46,15 @@ autocmd({ "BufNewFile", "BufRead" }, {
     vim.bo.filetype = "zsh"
   end,
 })
+
+autocmd({ "BufNewFile", "BufRead" }, {
+  pattern = {
+    "*.antlers.html",
+  },
+  desc = "set filetype for antlers templates",
+  group = augroup("antlers", { clear = true }),
+  -- command = [[set filetype=antlers.html]],
+  callback = function()
+    vim.bo.filetype = "antlers.html"
+  end,
+})
