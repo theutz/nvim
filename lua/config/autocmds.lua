@@ -58,3 +58,5 @@ autocmd({ "BufNewFile", "BufRead" }, {
     vim.bo.filetype = "antlers.html"
   end,
 })
+
+vim.treesitter.language.register("bash", "zsh")
