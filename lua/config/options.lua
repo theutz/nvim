@@ -3,3 +3,7 @@
 -- Add any additional options here
 
 vim.o.foldcolumn = "2"
+
+-- Stop annoying delyas with escape key
+vim.o.timeoutlen = 1000
+vim.o.ttimeoutlen = 0
