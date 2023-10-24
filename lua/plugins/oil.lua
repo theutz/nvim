@@ -1,8 +1,8 @@
 return {
   {
     "stevearc/oil.nvim",
-    enabled = false,
-    lazy = false,
+    enabled = true,
+    event = "VeryLazy",
     opts = {
       view_options = {
         show_hidden = true,
@@ -32,7 +32,7 @@ return {
     },
     keys = {
       {
-        "<leader>.",
+        "<leader>e",
         function()
           require("oil").open_float()
         end,
