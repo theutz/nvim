@@ -1,14 +1,14 @@
 return {
   {
     "nvim-neorg/neorg",
-    enabled = false,
+    enabled = true,
     build = ":Neorg sync-parsers",
     dependencies = { "nvim-lua/plenary.nvim" },
     event = "VeryLazy",
     keys = {
       { "<leader>nn", "<cmd>Neorg<cr>", desc = "Neorg" },
       { "<leader>ni", "<cmd>Neorg index<cr>", desc = "Neorg Index" },
-      { "<leader>nt", "<cmd>Neorg toggle-concealer<cr>", desc = "Toggle Concealer", ft = "norg" },
+      { "<leader>nc", "<cmd>Neorg toggle-concealer<cr>", desc = "Toggle Concealer", ft = "norg" },
       { "<leader>nh", "<cmd>vert help neorg-cheatsheet<cr>", desc = "Cheatsheet", ft = "norg" },
     },
     init = function()
