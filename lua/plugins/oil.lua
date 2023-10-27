@@ -41,7 +41,7 @@ return {
       {
         "<leader>fe",
         function()
-          require("oil").open()
+          require("oil").open_float()
         end,
         desc = "Open parent directory",
       },
