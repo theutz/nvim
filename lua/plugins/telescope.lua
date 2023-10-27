@@ -15,5 +15,14 @@ return {
       end,
       desc = "Search open buffers",
     },
+    {
+      "<leader>sc",
+      "<cmd>Telescope commands<cr>",
+      desc = "Commands",
+    },
+    {
+      "<leader>sC",
+      false,
+    },
   },
 }
