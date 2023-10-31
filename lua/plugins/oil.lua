@@ -34,14 +34,14 @@ return {
       {
         "<leader>e",
         function()
-          require("oil").open_float()
+          require("oil").open()
         end,
         desc = "Open parent directory",
       },
       {
         "<leader>fe",
         function()
-          require("oil").open_float()
+          require("oil").open()
         end,
         desc = "Open parent directory",
       },
