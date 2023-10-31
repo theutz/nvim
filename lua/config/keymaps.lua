@@ -3,6 +3,8 @@
 -- Add any additional keymaps here
 
 vim.keymap.set("i", "<C-j>", "<esc>o<esc>kO<esc>ji", { desc = "Make room" })
+vim.keymap.set("n", "<leader>wv", "<cmd>vsp<cr>", { desc = "Split vertical" })
+vim.keymap.set("n", "<leader>ws", "<cmd>sp<cr>", { desc = "Split horizontal" })
 
 -- ToggleTerm over native LazyVim float_term
 -- vim.keymap.del("n", "<leader>ft")
