@@ -1,7 +1,7 @@
 return {
   {
     "levouh/tint.nvim",
-    enable = true,
+    enabled = false,
     event = "VeryLazy",
     config = true,
     opts = {
