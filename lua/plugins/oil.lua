@@ -1,7 +1,7 @@
 return {
   {
     "stevearc/oil.nvim",
-    enabled = false,
+    enabled = true,
     event = "VeryLazy",
     opts = {
       view_options = {
@@ -32,18 +32,25 @@ return {
     },
     keys = {
       {
-        "<leader>e",
+        "<leader>o",
         function()
           require("oil").open()
         end,
         desc = "Open parent directory",
       },
       {
-        "<leader>fe",
+        "<leader>fo",
         function()
           require("oil").open()
         end,
-        desc = "Open parent directory",
+        desc = "Oil",
+      },
+      {
+        "<leader>fO",
+        function()
+          require("oil").open_float()
+        end,
+        desc = "Oil",
       },
     },
     -- Optional dependencies
