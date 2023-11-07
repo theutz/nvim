@@ -60,3 +60,12 @@ autocmd({ "BufNewFile", "BufRead" }, {
 })
 
 vim.treesitter.language.register("bash", "zsh")
+
+autocmd({ "BufEnter" }, {
+  pattern = "*.css",
+  desc = "remove dash from iskeyword",
+  group = augroup("css-text-objects", { clear = true }),
+  callback = function()
+    vim.opt_local.iskeyword:remove("-")
+  end,
+})
