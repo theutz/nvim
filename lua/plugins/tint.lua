@@ -1,12 +1,12 @@
 return {
   {
     "levouh/tint.nvim",
-    enabled = false,
+    enabled = true,
     event = "VeryLazy",
     config = true,
     opts = {
-      tint = 60,
-      saturation = 0.8,
+      tint = -60,
+      saturation = 0.9,
     },
   },
 }
