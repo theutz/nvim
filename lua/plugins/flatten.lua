@@ -1,7 +1,7 @@
 return {
   {
     "willothy/flatten.nvim",
-    enabled = false,
+    enabled = true,
     opts = {
       window = {
         open = "alternate",
