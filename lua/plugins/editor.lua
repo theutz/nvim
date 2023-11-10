@@ -1,5 +1,8 @@
 return {
   {
+    "junegunn/vim-easy-align",
+  },
+  {
     "LudoPinelli/comment-box.nvim",
     config = true,
     event = "VeryLazy",
