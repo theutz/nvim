@@ -29,24 +29,25 @@ return {
         ["g."] = "actions.toggle_hidden",
       },
       use_default_keymaps = false,
+      default_file_explorer = true,
     },
     keys = {
       {
-        "<leader>o",
+        "<leader>e",
         function()
           require("oil").open()
         end,
         desc = "Open parent directory",
       },
       {
-        "<leader>fo",
+        "<leader>fe",
         function()
           require("oil").open()
         end,
         desc = "Oil",
       },
       {
-        "<leader>fO",
+        "<leader>fE",
         function()
           require("oil").open_float()
         end,
