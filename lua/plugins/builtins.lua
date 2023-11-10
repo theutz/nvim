@@ -50,4 +50,39 @@ return {
       },
     },
   },
+  {
+    "nvim-treesitter/nvim-treesitter",
+    opts = {
+      indent = {
+        enable = true,
+        disable = { "yaml", "php" },
+      },
+    },
+  },
+  {
+    "folke/which-key.nvim",
+    event = "VeryLazy",
+    opts = {
+      defaults = {
+        ["<leader>go"] = {
+          name = "octo",
+          i = { name = "issues" },
+          p = { name = "pr" },
+          r = { name = "repo" },
+          g = { name = "gist" },
+        },
+      },
+    },
+  },
+  {
+    "folke/flash.nvim",
+    keys = {},
+    opts = {
+      modes = {
+        search = {
+          enabled = false,
+        },
+      },
+    },
+  },
 }

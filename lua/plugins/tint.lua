@@ -5,8 +5,8 @@ return {
     event = "VeryLazy",
     config = true,
     opts = {
-      tint = -60,
-      saturation = 0.9,
+      tint = -40,
+      saturation = 0.7,
     },
   },
 }
