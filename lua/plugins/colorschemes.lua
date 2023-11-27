@@ -1,9 +1,7 @@
 -- To change the color scheme, change the value in ./lazyvim.lua
 return {
-
   {
     "folke/tokyonight.nvim",
-    enabled = false,
     opts = {
       transparent = true,
       styles = {
@@ -14,7 +12,6 @@ return {
   },
   {
     "rebelot/kanagawa.nvim",
-    enabled = false,
     config = true,
     opts = {
       transparent = true,
@@ -29,6 +26,19 @@ return {
       vim.o.background = "dark"
       vim.g.everforest_background = "soft"
       vim.g.everforest_transparent_background = 0 -- 0, 1, 2
+    end,
+  },
+  {
+    "navarasu/onedark.nvim",
+    opts = {
+      style = "darker",
+    },
+  },
+  {
+    "sainnhe/sonokai",
+    config = function()
+      vim.g.sonokai_style = "andromeda"
+      vim.g.sonokai_better_performance = 1
     end,
   },
 }

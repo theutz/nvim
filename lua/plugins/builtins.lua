@@ -2,7 +2,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "everforest",
+      colorscheme = "sonokai",
     },
     keys = {
       { "<c-_>", false, mode = { "n" } },
