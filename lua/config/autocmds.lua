@@ -69,3 +69,12 @@ autocmd({ "BufEnter" }, {
     vim.opt_local.iskeyword:remove("-")
   end,
 })
+
+autocmd({ "BufRead", "BufNewFile" }, {
+  pattern = "*.tfvars",
+  desc = "set filetype for terraform variables files",
+  group = augroup("terraform_vars", { clear = true }),
+  callback = function()
+    vim.bo.filetype = "terraform"
+  end,
+})
