@@ -2,6 +2,7 @@
 return {
   {
     "folke/tokyonight.nvim",
+    enabled = true,
     opts = {
       transparent = true,
       styles = {
@@ -12,14 +13,17 @@ return {
   },
   {
     "rebelot/kanagawa.nvim",
+    enabled = false,
     config = true,
     opts = {
+      style = "moon",
       transparent = true,
       dimInactive = false,
     },
   },
   {
     "sainnhe/everforest",
+    enabled = false,
     lazy = false,
     priority = 1000,
     config = function()
@@ -30,15 +34,35 @@ return {
   },
   {
     "navarasu/onedark.nvim",
+    enabled = false,
     opts = {
       style = "darker",
     },
   },
   {
     "sainnhe/sonokai",
+    enabled = false,
     config = function()
       vim.g.sonokai_style = "andromeda"
       vim.g.sonokai_better_performance = 1
+    end,
+  },
+  {
+    "dasupradyumna/midnight.nvim",
+    enabled = false,
+    lazy = false,
+    priority = 1000,
+  },
+  {
+    "ray-x/starry.nvim",
+    enabled = false,
+    lazy = false,
+    priority = 1000,
+    config = function(_, opts)
+      local s = require("starry")
+      s.setup(opts)
+      vim.g.starry_disable_background = true
+      require("starry.functions").change_style("moonlight")
     end,
   },
 }
