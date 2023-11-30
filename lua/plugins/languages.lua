@@ -43,4 +43,8 @@ return {
       vim.wo.conceallevel = 2
     end,
   },
+
+  {
+    "imsnif/kdl.vim",
+  },
 }
