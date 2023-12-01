@@ -1,8 +1,14 @@
 -- To change the color scheme, change the value in ./lazyvim.lua
 return {
   {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "everforest",
+    },
+  },
+  {
     "folke/tokyonight.nvim",
-    enabled = true,
+    enabled = false,
     opts = {
       transparent = true,
       styles = {
@@ -23,13 +29,13 @@ return {
   },
   {
     "sainnhe/everforest",
-    enabled = false,
+    enabled = true,
     lazy = false,
     priority = 1000,
     config = function()
       vim.o.background = "dark"
       vim.g.everforest_background = "soft"
-      vim.g.everforest_transparent_background = 0 -- 0, 1, 2
+      vim.g.everforest_transparent_background = 2 -- 0, 1, 2
     end,
   },
   {
