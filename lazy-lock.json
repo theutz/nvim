@@ -44,7 +44,7 @@
   "neotest-rspec": { "branch": "main", "commit": "8630acad9e84b8267646bc8712a4365af7a12f2b" },
   "neotest-rust": { "branch": "main", "commit": "46428d9013023f516a61274a78b0cee87fb7e8bc" },
   "noice.nvim": { "branch": "main", "commit": "92433164e2f7118d4122c7674c3834d9511722ba" },
-  "none-ls.nvim": { "branch": "main", "commit": "de6865527bdd66f78738737e574796ccf138d19b" },
+  "none-ls.nvim": { "branch": "main", "commit": "7bf88cd3b37a411fdacfdca1745408a77a420493" },
   "nui.nvim": { "branch": "main", "commit": "257dccc43b4badc735978f0791d216f7d665b75a" },
   "nvim-cmp": { "branch": "main", "commit": "0b751f6beef40fd47375eaf53d3057e0bfa317e4" },
   "nvim-dap": { "branch": "master", "commit": "13ce59d4852be2bb3cd4967947985cb0ceaff460" },
