@@ -39,6 +39,12 @@ return {
     end,
   },
   {
+    "rcarriga/nvim-notify",
+    opts = {
+      background_color = "#000000",
+    },
+  },
+  {
     "navarasu/onedark.nvim",
     enabled = false,
     opts = {
