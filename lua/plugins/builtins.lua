@@ -1,16 +1,5 @@
 return {
   {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "tokyonight",
-    },
-    keys = {
-      { "<c-_>", false, mode = { "n" } },
-      { "<leader>ft", false },
-      { "<leader>fT", false },
-    },
-  },
-  {
     "nvim-telescope/telescope.nvim",
     keys = {
       {

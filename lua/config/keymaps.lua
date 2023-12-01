@@ -6,9 +6,3 @@ vim.keymap.set("i", "<C-j>", "<esc>o<esc>kO<esc>ji", { desc = "Make room" })
 vim.keymap.set("n", "<leader>wv", "<cmd>vsp<cr>", { desc = "Split vertical" })
 vim.keymap.set("n", "<leader>ws", "<cmd>sp<cr>", { desc = "Split horizontal" })
 vim.keymap.set("n", "<leader>.", "<cmd>Telescope current_buffer_fuzzy_find<cr>", { desc = "Search curent buffer" })
-
--- ToggleTerm over native LazyVim float_term
--- vim.keymap.del("n", "<leader>ft")
--- vim.keymap.del("n", "<leader>fT")
--- vim.keymap.del("n", "<C-_>")
--- vim.keymap.set("n", "<C-_>", "<cmd>ToggleTerm<cr>", { desc = "ToggleTerm" })
