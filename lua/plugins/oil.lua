@@ -33,25 +33,18 @@ return {
     },
     keys = {
       {
-        "<leader>e",
+        "<leader>fo",
         function()
           require("oil").open()
         end,
         desc = "Open parent directory",
       },
       {
-        "<leader>fe",
+        "<leader>o",
         function()
           require("oil").open()
         end,
-        desc = "Oil",
-      },
-      {
-        "<leader>fE",
-        function()
-          require("oil").open_float()
-        end,
-        desc = "Oil",
+        desc = "Open parent directory",
       },
     },
     -- Optional dependencies
