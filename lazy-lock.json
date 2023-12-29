@@ -14,6 +14,7 @@
   "comment-box.nvim": { "branch": "main", "commit": "457a591aabc89c8ba87a85bdc172549b7bf0e4f7" },
   "conform.nvim": { "branch": "master", "commit": "ad2b5ecd907128ed1b66b1cf4bed57902ef836ee" },
   "crates.nvim": { "branch": "main", "commit": "81c6325b7f8875857ec09e5d24f3b6d7986f29e2" },
+  "cyberdream.nvim": { "branch": "main", "commit": "eedbda33658e6e32bddc970da1b88653dd978ad9" },
   "dressing.nvim": { "branch": "master", "commit": "94b0d24483d56f3777ee0c8dc51675f21709318c" },
   "everforest": { "branch": "master", "commit": "72f101bd63228a1a45012325e39c5280ec22c828" },
   "flash.nvim": { "branch": "main", "commit": "48817af25f51c0590653bbc290866e4890fe1cbe" },
