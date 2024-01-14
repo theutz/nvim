@@ -1,12 +1,5 @@
 return {
   {
-    "NoahTheDuke/vim-just",
-  },
-  {
-    "jwalton512/vim-blade",
-    ft = "blade",
-  },
-  {
     "nvim-neorg/neorg",
     enabled = true,
     build = ":Neorg sync-parsers",
@@ -42,9 +35,5 @@ return {
       vim.wo.foldlevel = 99
       vim.wo.conceallevel = 2
     end,
-  },
-
-  {
-    "imsnif/kdl.vim",
   },
 }
