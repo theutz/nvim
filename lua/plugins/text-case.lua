@@ -4,9 +4,8 @@ return {
     dependencies = {
       "nvim-telescope/telescope.nvim",
     },
-    lazy = false,
     config = function()
-      require("textcase").setup()
+      require("textcase").setup({})
       require("telescope").load_extension("textcase")
     end,
     keys = {
