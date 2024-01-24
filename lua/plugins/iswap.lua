@@ -1,7 +1,9 @@
 return {
   {
     "mizlan/iswap.nvim",
-    config = true,
+    opts = {
+      move_cursor = true,
+    },
     keys = {
       { "<leader>co", "<Cmd>ISwap<cr>", desc = "Swap two items" },
       { "<leader>cO", "<Cmd>ISwapWith<cr>", desc = "Swap curent item" },
