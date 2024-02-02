@@ -1,6 +1,7 @@
 return {
   {
     "LudoPinelli/comment-box.nvim",
+    enabled = false,
     config = true,
     event = "VeryLazy",
     init = function()
