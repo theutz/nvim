@@ -3,7 +3,7 @@ return {
     "scottmckendry/cyberdream.nvim",
     lazy = false,
     priority = 1000,
-    enabled = true,
+    enabled = false,
     opts = {
       transparent = false,
       italic_comments = true,
