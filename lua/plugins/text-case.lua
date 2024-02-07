@@ -1,6 +1,7 @@
 return {
   {
     "johmsalas/text-case.nvim",
+    event = "VeryLazy",
     dependencies = {
       "nvim-telescope/telescope.nvim",
     },
