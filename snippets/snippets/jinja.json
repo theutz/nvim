@@ -13,5 +13,10 @@
     "prefix": "for",
     "body": ["{% for ${2:item} in ${1:collection} %}", "\t$0", "{% endfor %}"],
     "description": "Create a for block"
+  },
+  "do": {
+    "prefix": "do",
+    "body": ["{% do $0 %}"],
+    "description": "Create a do block"
   }
 }
