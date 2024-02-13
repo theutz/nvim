@@ -1,7 +1,7 @@
 return {
   {
     "aserowy/tmux.nvim",
-    enabled = true,
+    enabled = false,
     module = "tmux",
     config = true,
     opts = {
