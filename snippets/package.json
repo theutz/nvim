@@ -13,6 +13,12 @@
           "jinja"
         ],
         "path": "./snippets/jinja.json"
+      },
+      {
+        "language": [
+          "html"
+        ],
+        "path": "./snippets/html.json"
       }
     ]
   }
