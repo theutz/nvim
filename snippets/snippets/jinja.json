@@ -18,5 +18,15 @@
     "prefix": "do",
     "body": ["{% do $0 %}"],
     "description": "Create a do block"
+  },
+  "extends": {
+    "prefix": "extends",
+    "body": ["{% extends \"${1:path}\" %}", "$0"],
+    "description": "Extend this template from a layout"
+  },
+  "block": {
+    "prefix": "block",
+    "body": ["{% block ${1:name} %}", "\t$0", "{% endblock ${1:name} %}"],
+    "description": "Create a block that extends a layout"
   }
 }
