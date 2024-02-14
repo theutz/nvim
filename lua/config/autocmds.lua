@@ -86,3 +86,11 @@ autocmd("FileType", {
     vim.opt_local.wrap = true
   end,
 })
+
+autocmd("FileType", {
+  group = augroup("dapfloat", { clear = true }),
+  pattern = "dap-float",
+  callback = function()
+    vim.keymap.set("n", "q", "<cmd>close!<cr>", { buffer = true, silent = true })
+  end,
+})
