@@ -78,3 +78,11 @@ autocmd({ "BufRead", "BufNewFile" }, {
     vim.bo.filetype = "terraform"
   end,
 })
+
+autocmd("FileType", {
+  group = augroup("MChat", { clear = true }),
+  pattern = "mchat",
+  callback = function()
+    vim.opt_local.wrap = true
+  end,
+})
