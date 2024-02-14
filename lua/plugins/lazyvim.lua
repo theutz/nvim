@@ -3,7 +3,14 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "starry",
+      colorscheme = "catppuccin",
     },
+    -- opts = function(_, opts)
+    --   if vim.o.background == "light" then
+    --     opts.colorscheme = "kanagawa-wave"
+    --   else
+    --     opts.colorscheme = "kanagawa-lotus"
+    --   end
+    -- end,
   },
 }
