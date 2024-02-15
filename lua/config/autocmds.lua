@@ -8,8 +8,8 @@ local expand = vim.fn.expand
 
 autocmd({ "BufWritePost" }, {
   pattern = {
-    expand("~") .. "/.tmux.conf",
-    expand("~") .. "/.config/tmux/tmux.conf",
+    expand "~" .. "/.tmux.conf",
+    expand "~" .. "/.config/tmux/tmux.conf",
   },
   desc = "source tmux config files after writing",
   group = augroup("tmuxsource", { clear = true }),
@@ -18,7 +18,7 @@ autocmd({ "BufWritePost" }, {
 
 autocmd({ "BufWritePost" }, {
   pattern = {
-    expand("~") .. "/.local/share/chezmoi/*",
+    expand "~" .. "/.local/share/chezmoi/*",
   },
   desc = "apply chezmoi changes on save",
   group = augroup("chezmoi", { clear = true }),
@@ -28,9 +28,9 @@ autocmd({ "BufWritePost" }, {
 autocmd({ "BufNewFile", "BufRead" }, {
   pattern = {
     "*.zsh",
-    expand("~") .. "/.z{log{in,out},zsh{rc,env},pr{ofile,eztorc},aliases}",
-    expand("~") .. "/.zprezto/runcoms/*",
-    expand("~") .. "/.zprezto/*/functions/*",
+    expand "~" .. "/.z{log{in,out},zsh{rc,env},pr{ofile,eztorc},aliases}",
+    expand "~" .. "/.zprezto/runcoms/*",
+    expand "~" .. "/.zprezto/*/functions/*",
   },
   desc = "set filetype for zsh files",
   group = augroup("zshfiles", { clear = true }),
@@ -66,7 +66,7 @@ autocmd({ "BufEnter" }, {
   desc = "remove dash from iskeyword",
   group = augroup("css-text-objects", { clear = true }),
   callback = function()
-    vim.opt_local.iskeyword:remove("-")
+    vim.opt_local.iskeyword:remove "-"
   end,
 })
 

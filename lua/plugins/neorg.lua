@@ -12,9 +12,9 @@ return {
       { "<leader>nh", "<cmd>vert help neorg-cheatsheet<cr>", desc = "Cheatsheet", ft = "norg" },
     },
     init = function()
-      require("which-key").register({
+      require("which-key").register {
         ["<leader>n"] = { name = "notes" },
-      })
+      }
     end,
     opts = {
       load = {

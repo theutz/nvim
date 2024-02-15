@@ -24,7 +24,7 @@ return {
       {
         "<leader>;",
         function()
-          require("telescope.builtin").live_grep({ grep_open_files = true })
+          require("telescope.builtin").live_grep { grep_open_files = true }
         end,
         desc = "Search open buffers",
       },

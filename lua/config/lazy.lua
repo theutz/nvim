@@ -1,4 +1,4 @@
-local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+local lazypath = vim.fn.stdpath "data" .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
   -- bootstrap lazy.nvim
   -- stylua: ignore
@@ -6,11 +6,32 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(vim.env.LAZY or lazypath)
 
-require("lazy").setup({
+require("lazy").setup {
   spec = {
     -- add LazyVim and import its plugins
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
+    { "lazyvim.plugins.extras.coding.copilot" },
+    { "lazyvim.plugins.extras.coding.yanky" },
     { "lazyvim.plugins.extras.dap.core" },
+    { "lazyvim.plugins.extras.dap.nlua" },
+    { "lazyvim.plugins.extras.editor.aerial" },
+    { "lazyvim.plugins.extras.editor.navic" },
+    { "lazyvim.plugins.extras.formatting.prettier" },
+    { "lazyvim.plugins.extras.lang.docker" },
+    { "lazyvim.plugins.extras.lang.go" },
+    { "lazyvim.plugins.extras.lang.json" },
+    { "lazyvim.plugins.extras.lang.markdown" },
+    { "lazyvim.plugins.extras.lang.python" },
+    { "lazyvim.plugins.extras.lang.ruby" },
+    { "lazyvim.plugins.extras.lang.rust" },
+    { "lazyvim.plugins.extras.lang.terraform" },
+    { "lazyvim.plugins.extras.lang.typescript" },
+    { "lazyvim.plugins.extras.lang.yaml" },
+    { "lazyvim.plugins.extras.linting.eslint" },
+    { "lazyvim.plugins.extras.lsp.none-ls" },
+    { "lazyvim.plugins.extras.test.neotest" },
+    { "lazyvim.plugins.extras.ui.alpha" },
+    { "lazyvim.plugins.extras.util.project" },
     -- import/override with your plugins
     { import = "plugins" },
   },
@@ -40,4 +61,4 @@ require("lazy").setup({
       },
     },
   },
-})
+}

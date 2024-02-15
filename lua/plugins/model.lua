@@ -5,19 +5,19 @@ return {
       "folke/which-key.nvim",
     },
     config = function()
-      require("which-key").register({
+      require("which-key").register {
         { ["<leader>a"] = { name = "ai" } },
         { ["<leader>ac"] = { name = "chat" } },
-      })
+      }
     end,
     event = "VeryLazy",
     cmd = { "M", "Model", "Mchat" },
     init = function()
-      vim.filetype.add({
+      vim.filetype.add {
         extension = {
           mchat = "mchat",
         },
-      })
+      }
     end,
     ft = "mchat",
     keys = {

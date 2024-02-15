@@ -11,3 +11,4 @@ vim.keymap.set("n", "<leader>w_", "<Cmd>wincmd _<cr>", { desc = "Max out the hei
 vim.keymap.set("n", "<leader>wo", "<Cmd>wincmd o<cr>", { desc = "Close Other Windows" })
 vim.keymap.set("n", "<leader>ws", "<cmd>sp<cr>", { desc = "Split horizontal" })
 vim.keymap.set("n", "<leader>wv", "<cmd>vsp<cr>", { desc = "Split vertical" })
+vim.keymap.set("n", "<leader>ap", "<cmd>Copilot panel<cr>", { desc = "Copilot Panel" })

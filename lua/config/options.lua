@@ -9,5 +9,5 @@ vim.o.timeoutlen = 1000
 vim.o.ttimeoutlen = 0
 
 if vim.g.neovide then
-  require("config.neovide")
+  require "config.neovide"
 end

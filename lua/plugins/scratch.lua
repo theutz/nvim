@@ -8,10 +8,10 @@ return {
       vim.g.scratch_insert_autohide = false
     end,
     config = function()
-      local wk = require("which-key")
-      wk.register({
+      local wk = require "which-key"
+      wk.register {
         ["<leader>n"] = { name = "Notes" },
-      })
+      }
     end,
     keys = {
       -- { "<leader>nn", "<cmd>ScratchPreview<cr>", desc = "Toggle scratch buffer" },
