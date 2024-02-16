@@ -1,15 +1,7 @@
 -- vim: fdm=indent fdl=1
-return {
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "nightfox",
-    },
-  },
+local colors = {
   {
     "ribru17/bamboo.nvim",
-    enabled = true,
-    priority = 1000,
     opts = {
       style = "multiplex",
       transparent = true,
@@ -21,13 +13,10 @@ return {
   },
   {
     "RRethy/base16-nvim",
-    enabled = true,
   },
   {
     "catppuccin/nvim",
     name = "catppuccin",
-    priority = 1000,
-    enabled = true,
     opts = {
       background = {
         light = "latte",
@@ -37,8 +26,6 @@ return {
   },
   {
     "scottmckendry/cyberdream.nvim",
-    priority = 1000,
-    enabled = true,
     opts = {
       transparent = false,
       italic_comments = true,
@@ -48,8 +35,6 @@ return {
   },
   {
     "sainnhe/everforest",
-    enabled = true,
-    priority = 1000,
     config = function()
       vim.g.everforest_background = "hard"
       vim.g.everforest_transparent_background = 0 -- 0, 1, 2
@@ -57,7 +42,6 @@ return {
   },
   {
     "rebelot/kanagawa.nvim",
-    enabled = true,
     config = true,
     opts = {
       style = "moon",
@@ -67,18 +51,12 @@ return {
   },
   {
     "dasupradyumna/midnight.nvim",
-    enabled = true,
-    priority = 1000,
   },
   {
     "miikanissi/modus-themes.nvim",
-    priority = 1000,
-    enabled = true,
   },
   {
     "olimorris/onedarkpro.nvim",
-    enabled = true,
-    priority = 1000,
     opts = {
       options = {
         cursorline = false,
@@ -89,12 +67,9 @@ return {
   },
   {
     "nyoom-engineering/oxocarbon.nvim",
-    enabled = true,
-    priority = 1000,
   },
   {
     "sainnhe/sonokai",
-    enabled = true,
     config = function()
       vim.g.sonokai_style = "default" -- default, shusia, andromeda, atlantis, maia, espresso
       vim.g.sonokai_better_performance = 1
@@ -102,8 +77,6 @@ return {
   },
   {
     "ray-x/starry.nvim",
-    enabled = true,
-    priority = 1000,
     config = function(_, opts)
       local s = require "starry"
       s.setup(opts)
@@ -112,13 +85,9 @@ return {
   },
   {
     "projekt0n/github-nvim-theme",
-    enabled = true,
-    priority = 1000,
   },
   {
     "folke/tokyonight.nvim",
-    enabled = true,
-    priority = 1000,
     opts = {
       transparent = true,
       style = "moon",
@@ -131,10 +100,32 @@ return {
   },
   {
     "EdenEast/nightfox.nvim",
-    priority = 1000,
     opts = {
-      style = "dawnfox",
       transparent = true,
     },
   },
+  {
+    "tiagovla/tokyodark.nvim",
+    opts = {
+      transparent_background = true,
+    },
+  },
 }
+
+local colorscheme = "terafox"
+
+local plugins = {
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = colorscheme,
+    },
+  },
+}
+
+for _, color in pairs(colors) do
+  color.priority = 1000
+  table.insert(plugins, color)
+end
+
+return plugins
