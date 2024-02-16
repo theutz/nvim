@@ -35,13 +35,9 @@ autocmd({ "BufNewFile", "BufRead" }, {
   desc = "set filetype for zsh files",
   group = augroup("zshfiles", { clear = true }),
   callback = function()
-    if vim.bo.filetype == "markdown" then
-      return
-    end
+    if vim.bo.filetype == "markdown" then return end
 
-    if vim.bo.filetype == "oil" then
-      return
-    end
+    if vim.bo.filetype == "oil" then return end
 
     vim.bo.filetype = "zsh"
   end,
@@ -54,9 +50,7 @@ autocmd({ "BufNewFile", "BufRead" }, {
   desc = "set filetype for antlers templates",
   group = augroup("antlers", { clear = true }),
   -- command = [[set filetype=antlers.html]],
-  callback = function()
-    vim.bo.filetype = "antlers.html"
-  end,
+  callback = function() vim.bo.filetype = "antlers.html" end,
 })
 
 vim.treesitter.language.register("bash", "zsh")
@@ -65,32 +59,24 @@ autocmd({ "BufEnter" }, {
   pattern = "*.css",
   desc = "remove dash from iskeyword",
   group = augroup("css-text-objects", { clear = true }),
-  callback = function()
-    vim.opt_local.iskeyword:remove "-"
-  end,
+  callback = function() vim.opt_local.iskeyword:remove "-" end,
 })
 
 autocmd({ "BufRead", "BufNewFile" }, {
   pattern = "*.tfvars",
   desc = "set filetype for terraform variables files",
   group = augroup("terraform_vars", { clear = true }),
-  callback = function()
-    vim.bo.filetype = "terraform"
-  end,
+  callback = function() vim.bo.filetype = "terraform" end,
 })
 
 autocmd("FileType", {
   group = augroup("MChat", { clear = true }),
   pattern = "mchat",
-  callback = function()
-    vim.opt_local.wrap = true
-  end,
+  callback = function() vim.opt_local.wrap = true end,
 })
 
 autocmd("FileType", {
   group = augroup("dapfloat", { clear = true }),
   pattern = "dap-float",
-  callback = function()
-    vim.keymap.set("n", "q", "<cmd>close!<cr>", { buffer = true, silent = true })
-  end,
+  callback = function() vim.keymap.set("n", "q", "<cmd>close!<cr>", { buffer = true, silent = true }) end,
 })

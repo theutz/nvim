@@ -34,16 +34,12 @@ return {
     keys = {
       {
         "<leader>fo",
-        function()
-          require("oil").open()
-        end,
+        function() require("oil").open() end,
         desc = "Open parent directory",
       },
       {
         "<leader>o",
-        function()
-          require("oil").open()
-        end,
+        function() require("oil").open() end,
         desc = "Open parent directory",
       },
     },
