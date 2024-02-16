@@ -101,7 +101,9 @@ local colors = {
   {
     "EdenEast/nightfox.nvim",
     opts = {
-      transparent = true,
+      options = {
+        transparent = true,
+      },
     },
   },
   {
@@ -112,7 +114,7 @@ local colors = {
   },
 }
 
-local colorscheme = "terafox"
+local colorscheme = "carbonfox"
 
 local plugins = {
   {
