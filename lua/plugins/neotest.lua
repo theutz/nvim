@@ -7,7 +7,7 @@ return {
       "nvim-treesitter/nvim-treesitter",
       "marilari88/neotest-vitest",
       "nvim-neotest/neotest-vim-test",
-      "theutz/neotest-pest",
+      "V13Axel/neotest-pest",
     },
     opts = {
       adapters = {
