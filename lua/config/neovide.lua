@@ -1,4 +1,5 @@
-vim.o.guifont = "Recursive:h16"
+vim.o.guifont = "Macon:h14"
+-- vim.o.linespace = 11
 
 local padding = 20
 vim.g.neovide_padding_top = padding
