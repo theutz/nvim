@@ -27,7 +27,7 @@ local colors = {
   {
     "scottmckendry/cyberdream.nvim",
     opts = {
-      transparent = false,
+      transparent = true,
       italic_comments = true,
       hide_fillchars = true,
       borderless_telescope = true,
@@ -120,7 +120,7 @@ local colors = {
   },
 }
 
-local colorscheme = "carbonfox"
+local colorscheme = "cyberdream"
 
 local plugins = {
   {
