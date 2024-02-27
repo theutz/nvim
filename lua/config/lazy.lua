@@ -10,7 +10,7 @@ require("lazy").setup {
   spec = {
     -- add LazyVim and import its plugins
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
-    { "lazyvim.plugins.extras.coding.copilot" },
+    -- { "lazyvim.plugins.extras.coding.copilot" },
     { "lazyvim.plugins.extras.coding.yanky" },
     { "lazyvim.plugins.extras.dap.core" },
     { "lazyvim.plugins.extras.dap.nlua" },
