@@ -3,7 +3,7 @@ return {
     "nvim-neorg/neorg",
     enabled = false,
     build = ":Neorg sync-parsers",
-    dependencies = { "nvim-lua/plenary.nvim" },
+    dependencies = { "nvim-lua/plenary.nvim", "folke/which-key.nvim" },
     event = "VeryLazy",
     keys = {
       { "<leader>nn", "<cmd>Neorg<cr>", desc = "Neorg" },
