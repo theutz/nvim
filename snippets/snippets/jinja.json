@@ -28,5 +28,10 @@
     "prefix": "block",
     "body": ["{% block ${1:name} %}", "\t$0", "{% endblock ${1:name} %}"],
     "description": "Create a block that extends a layout"
+  },
+  "macro": {
+    "prefix": "macro",
+    "body": ["{% macro ${1:name}(${2:args}) %}", "\t$0", "{% endmacro %}"],
+    "description": "Create a new macro"
   }
 }
