@@ -118,9 +118,20 @@ local colors = {
     lazy = false,
     priority = 1000,
   },
+  {
+    "rose-pine/neovim",
+    name = "rose-pine",
+    opts = {
+      variant = "dawn",
+      dark_variant = "main",
+      styles = {
+        transparency = true,
+      },
+    },
+  },
 }
 
-local colorscheme = "sonokai"
+local colorscheme = "rose-pine"
 
 local plugins = {
   {
