@@ -123,7 +123,7 @@ local colors = {
     name = "rose-pine",
     opts = {
       variant = "dawn",
-      dark_variant = "main",
+      dark_variant = "moon",
       styles = {
         transparency = true,
       },
