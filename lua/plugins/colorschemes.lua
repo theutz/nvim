@@ -122,8 +122,8 @@ local colors = {
     "rose-pine/neovim",
     name = "rose-pine",
     opts = {
-      variant = "dawn",
-      dark_variant = "main",
+      variant = "auto",
+      dark_variant = "moon",
       styles = {
         transparency = true,
       },
