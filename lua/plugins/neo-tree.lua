@@ -8,6 +8,13 @@ return {
         filtered_items = {
           hide_dotfiles = false,
         },
+        window = {
+          mappings = {
+            ["H"] = "navigate_up",
+            ["zh"] = "toggle_hidden",
+            ["L"] = { "toggle_preview", config = { use_float = true } },
+          },
+        },
       },
       event_handlers = {
         {
