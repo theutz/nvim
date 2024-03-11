@@ -4,11 +4,20 @@ return {
     opts = {
       defaults = {
         mappings = {
-          n = {
-            d = require("telescope.actions").delete_buffer,
-          },
           i = {
-            ["<m-d>"] = require("telescope.actions").delete_buffer,
+            ["<c-t>"] = require("telescope.actions").file_tab,
+          },
+        },
+      },
+      pickers = {
+        buffers = {
+          mappings = {
+            n = {
+              d = require("telescope.actions").delete_buffer,
+            },
+            i = {
+              ["<c-q>"] = require("telescope.actions").delete_buffer,
+            },
           },
         },
       },
