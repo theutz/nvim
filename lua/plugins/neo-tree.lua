@@ -11,6 +11,7 @@ return {
         window = {
           mappings = {
             ["H"] = "navigate_up",
+            ["-"] = "navigate_up",
             ["zh"] = "toggle_hidden",
             ["L"] = { "toggle_preview", config = { use_float = true } },
           },
