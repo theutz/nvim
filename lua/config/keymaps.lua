@@ -12,3 +12,4 @@ vim.keymap.set("n", "<leader>wo", "<Cmd>wincmd o<cr>", { desc = "Close Other Win
 vim.keymap.set("n", "<leader>ws", "<cmd>sp<cr>", { desc = "Split horizontal" })
 vim.keymap.set("n", "<leader>wv", "<cmd>vsp<cr>", { desc = "Split vertical" })
 vim.keymap.set("n", "<leader>ap", "<cmd>Copilot panel<cr>", { desc = "Copilot Panel" })
+vim.keymap.set("t", "<S-space>", "<Space>")
