@@ -80,3 +80,13 @@ autocmd("FileType", {
   pattern = "dap-float",
   callback = function() vim.keymap.set("n", "q", "<cmd>close!<cr>", { buffer = true, silent = true }) end,
 })
+
+autocmd("FileType", {
+  group = augroup("markdown", { clear = true }),
+  pattern = "markdown",
+  callback = function()
+    vim.o.foldexpr = "nvim_treesitter#foldexpr()"
+    vim.cmd [[ norm zx
+    norm zR ]]
+  end,
+})
