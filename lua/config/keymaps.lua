@@ -2,6 +2,19 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 
+local function open_file(filepath) vim.cmd("edit " .. filepath) end
+
+local function get_agenda_file(name)
+  local base = "~/code/theutz/agenda/"
+  local extension = ".md"
+  local file_path = base .. name .. extension
+  return file_path
+end
+
+local function open_agenda_file(name)
+  return function() open_file(get_agenda_file(name)) end
+end
+
 vim.keymap.set("i", "<C-j>", "<esc>o<esc>kO<esc>ji", { desc = "Make room" })
 vim.keymap.set("n", "<leader>.", "<cmd>Telescope current_buffer_fuzzy_find<cr>", { desc = "Search curent buffer" })
 vim.keymap.set("n", "<leader>ap", "<cmd>Copilot panel<cr>", { desc = "Copilot Panel" })
@@ -13,3 +26,4 @@ vim.keymap.set("n", "<leader>wo", "<Cmd>wincmd o<cr>", { desc = "Close Other Win
 vim.keymap.set("n", "<leader>ws", "<cmd>sp<cr>", { desc = "Split horizontal" })
 vim.keymap.set("n", "<leader>wv", "<cmd>vsp<cr>", { desc = "Split vertical" })
 vim.keymap.set("t", "<S-space>", "<Space>")
+vim.keymap.set("n", "<leader>na", open_agenda_file "today", { desc = "Open agenda" })
