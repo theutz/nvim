@@ -1,6 +1,7 @@
 return {
   {
     "ecthelionvi/NeoComposer.nvim",
+    enabled = false,
     dependencies = { "kkharji/sqlite.lua", "nvim-telescope/telescope.nvim" },
     opts = {},
     config = function(_, opts)
