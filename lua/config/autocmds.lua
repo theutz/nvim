@@ -49,9 +49,10 @@ autocmd({ "BufNewFile", "BufRead" }, {
   },
   desc = "set filetype for antlers templates",
   group = augroup("antlers", { clear = true }),
-  -- command = [[set filetype=antlers.html]],
-  callback = function() vim.bo.filetype = "antlers.html" end,
+  callback = function() vim.bo.filetype = "antlers" end,
 })
+
+vim.treesitter.language.register("html", "antlers")
 
 vim.treesitter.language.register("bash", "zsh")
 
