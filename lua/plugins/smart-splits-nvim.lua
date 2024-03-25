@@ -2,6 +2,9 @@ return {
   {
     "mrjones2014/smart-splits.nvim",
     lazy = false,
+    opts = {
+      at_edge = "stop",
+    },
     keys = {
       { "<C-h>", function() require("smart-splits").move_cursor_left() end, desc = "Focus left window" },
       { "<C-j>", function() require("smart-splits").move_cursor_down() end, desc = "Focus down window" },
