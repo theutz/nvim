@@ -6,6 +6,12 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(vim.env.LAZY or lazypath)
 
+local function concurrency()
+  local multiplier = 2
+  if vim.g.neovide then multiplier = 1 end
+  return (vim.loop.available_parallelism() * multiplier) or nil
+end
+
 require("lazy").setup {
   spec = {
     -- add LazyVim and import its plugins
@@ -13,6 +19,7 @@ require("lazy").setup {
     -- import/override with your plugins
     { import = "plugins" },
   },
+  concurrency = concurrency(),
   defaults = {
     -- By default, only LazyVim plugins will be lazy-loaded. Your custom plugins will load during startup.
     -- If you know what you're doing, you can set this to `true` to have all your custom plugins lazy-loaded by default.
