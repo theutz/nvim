@@ -139,6 +139,7 @@ local colors = {
     "rose-pine/neovim",
     name = "rose-pine",
     opts = {
+      dim_inactive_windows = true,
       variant = "auto",
       -- variant = "dawn",
       -- dark_variant = "main",
