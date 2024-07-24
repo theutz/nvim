@@ -2,8 +2,8 @@ return {
   "rawnly/gist.nvim",
   cmd = { "GistCreate", "GistCreateFromFile", "GistsList" },
   init = function()
-    require("which-key").register {
-      ["<leader>gi"] = { name = "gists" },
+    require("which-key").add {
+      { "<leader>gi", group = "gists" },
     }
   end,
   config = true,

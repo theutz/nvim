@@ -5,9 +5,9 @@ return {
       "folke/which-key.nvim",
     },
     config = function()
-      require("which-key").register {
-        { ["<leader>a"] = { name = "ai" } },
-        { ["<leader>ac"] = { name = "chat" } },
+      require("which-key").add {
+        { "<leader>a", group = "ai" },
+        { "<leader>ac", group = "chat" },
       }
     end,
     event = "VeryLazy",

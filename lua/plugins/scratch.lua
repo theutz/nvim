@@ -10,8 +10,8 @@ return {
     dependencies = { "folke/which-key.nvim" },
     config = function()
       local wk = require "which-key"
-      wk.register {
-        ["<leader>n"] = { name = "notes" },
+      wk.add {
+        { "<leader>n", group = "notes" },
       }
     end,
     keys = {

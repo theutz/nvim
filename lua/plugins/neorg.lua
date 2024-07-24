@@ -11,11 +11,6 @@ return {
       { "<leader>nc", "<cmd>Neorg toggle-concealer<cr>", desc = "Toggle Concealer", ft = "norg" },
       { "<leader>nh", "<cmd>vert help neorg-cheatsheet<cr>", desc = "Cheatsheet", ft = "norg" },
     },
-    init = function()
-      require("which-key").register {
-        ["<leader>n"] = { name = "notes" },
-      }
-    end,
     opts = {
       load = {
         ["core.defaults"] = {},
