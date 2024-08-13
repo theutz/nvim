@@ -137,6 +137,7 @@ local colors = {
   },
   {
     "rose-pine/neovim",
+    enabled = false,
     name = "rose-pine",
     opts = {
       dim_inactive_windows = true,
@@ -148,9 +149,27 @@ local colors = {
       },
     },
   },
+  {
+    "SethBarberee/challenger-deep.nvim",
+    enabled = false,
+    lazy = false,
+    priority = 1000,
+    name = "challenger-deep",
+  },
+  {
+    "0xstepit/flow.nvim",
+    enabled = true,
+    lazy = false,
+    priority = 1000,
+    opts = {
+      transparent = true,
+      fluo_color = "pink", -- pink, yellow, orange, green
+      mode = "bright", -- normal, bright, desaturate, or dark
+    },
+  },
 }
 
-local colorscheme = "rose-pine"
+local colorscheme = "flow"
 
 local plugins = {
   {
