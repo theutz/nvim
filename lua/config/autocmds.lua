@@ -13,7 +13,7 @@ autocmd({ "BufWritePost" }, {
   },
   desc = "source tmux config files after writing",
   group = augroup("tmuxsource", { clear = true }),
-  command = [[! tmux source-file "%" && chezmoi re-add %]],
+  command = [[! tmux source-file "%" && chezmoi re-add % &]],
 })
 
 autocmd({ "BufWritePost" }, {
