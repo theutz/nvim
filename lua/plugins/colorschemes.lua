@@ -6,12 +6,11 @@ local colors = {
     lazy = false,
     priority = 1000,
     opts = {
-      transparent = false,
+      transparent = true,
       style = "moon",
-      light_style = "night",
       styles = {
-        sidebars = "dark",
-        floats = "dark",
+        sidebars = "transparent",
+        floats = "transparent",
       },
     },
   },
