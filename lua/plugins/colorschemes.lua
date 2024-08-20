@@ -2,9 +2,7 @@
 local colors = {
   {
     "folke/tokyonight.nvim",
-    enabled = true,
-    lazy = false,
-    priority = 1000,
+    enabled = false,
     opts = {
       transparent = true,
       style = "moon",
@@ -14,9 +12,16 @@ local colors = {
       },
     },
   },
+  {
+    "scottmckendry/cyberdream.nvim",
+    opts = {
+      transparent = true,
+      italic_comments = true,
+    },
+  },
 }
 
-local colorscheme = "tokyonight"
+local colorscheme = "cyberdream"
 
 local plugins = {
   {
@@ -29,6 +34,7 @@ local plugins = {
 
 for _, color in pairs(colors) do
   color.priority = 1000
+  color.lazy = false
   table.insert(plugins, color)
 end
 
