@@ -17,6 +17,13 @@ autocmd({ "BufWritePost" }, {
 })
 
 autocmd({ "BufWritePost" }, {
+  pattern = { expand "~" .. "/.config/aerospace/aerospace.toml" },
+  desc = "reload aerospace config",
+  group = augroup("aerospaceconfig", { clear = true }),
+  command = [[! noti -t aerospace -m 'Config reloaded' aerospace reload-config ]],
+})
+
+autocmd({ "BufWritePost" }, {
   pattern = {
     expand "~" .. "/.local/share/chezmoi/*",
   },
