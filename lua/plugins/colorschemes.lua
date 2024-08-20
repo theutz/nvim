@@ -2,7 +2,7 @@
 local colors = {
   {
     "folke/tokyonight.nvim",
-    enabled = false,
+    enabled = true,
     opts = {
       transparent = true,
       style = "moon",
@@ -14,14 +14,28 @@ local colors = {
   },
   {
     "scottmckendry/cyberdream.nvim",
+    enabled = false,
     opts = {
       transparent = true,
       italic_comments = true,
     },
   },
+  {
+    "echasnovski/mini.base16",
+    version = false,
+  },
+  {
+    "uloco/bluloco.nvim",
+    dependencies = { "rktjmp/lush.nvim" },
+    opts = {
+      transparent = true,
+      style = "dark",
+      italics = true,
+    },
+  },
 }
 
-local colorscheme = "cyberdream"
+local colorscheme = "bluloco"
 
 local plugins = {
   {
