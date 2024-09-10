@@ -1,6 +1,7 @@
 return {
   {
     "jellydn/hurl.nvim",
+    enabled = false,
     dependencies = {
       "MunifTanjim/nui.nvim",
       "nvim-treesitter/nvim-treesitter",

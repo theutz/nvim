@@ -1,6 +1,7 @@
 return {
   {
     "mtth/scratch.vim",
+    enabled = false,
     event = "VeryLazy",
     init = function()
       vim.g.scratch_no_mappings = true

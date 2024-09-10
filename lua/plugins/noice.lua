@@ -1,13 +1,6 @@
 return {
   {
     "folke/noice.nvim",
-    keys = {
-      { "<leader>!", function() require("noice").cmd "dismiss" end, desc = "Dismiss all" },
-    },
-    opts = {
-      messages = {
-        view_error = "messages",
-      },
-    },
+    commit = "d9328ef903168b6f52385a751eb384ae7e906c6f", -- fix hanging neovim
   },
 }

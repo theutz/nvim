@@ -13,7 +13,7 @@ autocmd({ "BufWritePost" }, {
   },
   desc = "source tmux config files after writing",
   group = augroup("tmuxsource", { clear = true }),
-  command = [[! tmux source-file "%" && chezmoi re-add % &]],
+  command = [[! tmux source-file "%"]],
 })
 
 autocmd({ "BufWritePost" }, {
@@ -21,15 +21,6 @@ autocmd({ "BufWritePost" }, {
   desc = "reload aerospace config",
   group = augroup("aerospaceconfig", { clear = true }),
   command = [[! noti -t aerospace -m 'Config reloaded' aerospace reload-config ]],
-})
-
-autocmd({ "BufWritePost" }, {
-  pattern = {
-    expand "~" .. "/.local/share/chezmoi/*",
-  },
-  desc = "apply chezmoi changes on save",
-  group = augroup("chezmoi", { clear = true }),
-  command = [[! chezmoi apply --source-path "%"]],
 })
 
 autocmd({ "BufNewFile", "BufRead" }, {

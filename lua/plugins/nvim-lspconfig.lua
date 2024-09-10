@@ -14,6 +14,11 @@ return {
             "html",
           },
         },
+        tailwindcss = {
+          filetypes = {
+            "htmlhugo",
+          },
+        },
         intelephense = {
           settings = {
             intelephense = {

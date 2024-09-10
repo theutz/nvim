@@ -2,7 +2,8 @@
   "lspconfig": {
     "tailwindcss": {
       "tailwindCSS.includeLanguages": {
-        "antlers": "html"
+        "antlers": "html",
+        "htmlhugo": "html"
       }
     }
   }

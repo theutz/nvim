@@ -1,5 +1,5 @@
 vim.o.linespace = 0
-vim.o.guifont = "Lilex Nerd Font:h14"
+vim.o.guifont = "Lilex Nerd Font:h16"
 
 local padding = 20
 vim.g.neovide_padding_top = padding
